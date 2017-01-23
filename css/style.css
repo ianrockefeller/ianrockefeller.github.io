@@ -1,0 +1,258 @@
+body {
+	background-color: rgb(87,24,69);
+    height: 100%;
+}
+
+a,a:hover,a:active,a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.nav {
+	color: white;
+	background-color: rgba(144,12,62,.8);	
+	position: fixed;
+	width: 100%;
+}
+
+
+.nav div {
+	display: inline-block;
+}
+
+.click {
+	cursor: pointer;
+}
+
+.nav-links > div {
+	padding: 3%;
+}
+
+.nav-links {
+	width: 70%;
+}
+
+.nav-links .click {
+	box-sizing: border-box;
+	border-bottom: 2px solid rgba(144,12,62,.8);		
+	/*border-top: 2px solid rgba(144,12,62,.8);*/
+}
+
+.nav-links .click:hover {
+	border-bottom: 2px solid rgb(255,195,0);
+}
+
+.nav-links .click.selected {
+	border-bottom: 2px solid rgb(255,195,0);
+}
+
+.bg {
+	height: 100%;
+}
+
+.mountains {
+	overflow:hidden;
+	background:#b4ddf0;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+.mountain, .mountain-two, .mountain-three {
+    position: relative;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 180px solid #bfa2ca;
+    z-index: 1;
+}
+
+.mountain-container {
+	position: absolute;
+	bottom: 0;
+}
+
+.mountain-two { 
+    left: 80px;
+    bottom: -30px;
+    opacity: .4;
+    z-index: 0;
+}
+.mountain-three {
+    left: -60px;
+    bottom:-10px;
+    opacity: .6;
+    z-index: 0;
+}
+.mountain-top {
+    position: absolute;
+    right: -65px;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-bottom: 77px solid #fff;
+    z-index: 2;
+}
+.mountain-cap-1, .mountain-cap-2, .mountain-cap-3,.mountain-cap-4, .mountain-cap-5, .mountain-cap-6 {
+    position: absolute;
+    top: 76px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 14px solid #fff;
+}
+.mountain-cap-1 { left: 43px; }
+.mountain-cap-2 { left: 22px; }
+.mountain-cap-3 { left: 1px; }
+.mountain-cap-4 { left: -19px; }
+.mountain-cap-5 { left: -42px; }
+.mountain-cap-6 { left: -62px; }
+
+.cloud, .cloud:before, .cloud:after {
+  position: absolute;
+  width: 70px;
+	height: 30px;
+	background: #fff;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+.cloud { 
+  bottom: 100px;
+  -webkit-animation: cloud 50s infinite linear;
+          animation: cloud 50s infinite linear;
+}
+@-webkit-keyframes cloud {
+    0%   { left: -100px; }
+    100% { left: 1000px; } 
+}
+@keyframes cloud {
+   
+    0%   { left: -100px; }
+    100% { left: 1000px; } 
+}
+.cloud:before {
+  content: '';
+  left: 50px;
+}
+.cloud:after {
+  content: '';
+  left: 25px;
+  top: -10px;
+}
+
+.pane {
+	display: inline-block;
+	width: 25%;
+	height: 150px;
+	vertical-align: middle;
+	margin:1em;	
+}
+
+.hero-message {
+    font-size: 3.5em;
+    top: 50%;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    /*text-shadow: -6px 1px;*/
+    top: 35%;
+}
+
+.box {
+	background-color: rgb(87,24,69);
+	width: 100%; height: 100%;
+	transform-style: preserve-3d;
+	transition: transform 3s;
+	padding: 0 1em;
+	cursor: default;	
+}
+
+.service-text {
+	display: table-cell;
+	width: 25%;
+	height: 140px;
+	vertical-align: middle;
+	backface-visibility: hidden;
+}
+
+#complete-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2px;
+	z-index: 2;
+	width: 0;
+	/*background-color: rgb(255,87,51);*/
+	background-color: gold;
+}
+
+#slide2 {
+	background: #e96443;
+	background: -webkit-linear-gradient(to left, #e96443 , #904e95);
+	background: linear-gradient(to left, #e96443 , #904e95);
+
+}
+
+.footer-bg {
+	background: #e96443;
+	background: -webkit-linear-gradient(to right, #e96443 , #904e95);
+	background: linear-gradient(to right, #e96443 , #904e95);
+}
+
+.anchor {
+	width:0;
+	height:0;
+	position:relative;
+	top: -15%;
+}
+
+.skills-table td {
+	display: inline-block; 
+	text-align: center; 
+	width: 25%;	
+}
+
+#slide4 {
+	background: #e96443;
+	background: -webkit-linear-gradient(to right, #e96443 , #904e95);
+	background: linear-gradient(to right, #e96443 , #904e95);
+}
+
+.repo-pane {
+	background-color: #eee;
+	padding: 1em;
+	text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.repo-pane a, .repo-pane a:hover, .repo-pane a:active, .repo-pane a:visited {
+    text-decoration:none;
+    color: inherit;
+}
+
+#repo-table>div>* {
+	text-align: left;
+}
+
+#slide6 {
+	display: none;
+	height: 0;
+}
+
+.contact-list {
+	padding-left: 0;
+}
+
+.contact-list li {
+	display: inline;
+}
+
+#slide5 a {
+	color: rgb(199,0,57);
+	font-weight: 700;
+}
+
+#slide5 a:hover {
+	color: gold;
+}

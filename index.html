@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ian Rockefeller</title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=700, initial-scale=.5">
 
-	<link href="style.css" rel="stylesheet" />
-	<script src="js.js"></script>
+	<title>Ian Rockefeller</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+	<link href="css/style.css" rel="stylesheet" />
+	<script src="js/js.js"></script>
 
 <style>
 </style>	
 </head>
-<body style="min-width: 700px;">
+<body>
 	<div id="about-anchor" class="anchor" style="top:0;"></div>
 	<div class="nav" style="z-index: 2;">	
 		<div id="complete-bar"></div>
@@ -73,26 +75,26 @@
 		<div id="services-anchor" class="anchor"></div>
 		<div class="container">
 			<p style="font-size: 2.5em; text-align: left;"><b>Services</b></p>
-			<div class="box-row new-row">
+			<div>
 				<div class="box-wrapper pane"><div class="box">
-					<div class="service-text"><b>Custom Applications</b><br/><br/>Tell us what you want and we'll make what we want</div>
+					<div class="service-text"><b>Custom Applications</b><br/><br/>Tailored to your business needs</div>
 				</div></div>
 				<div class="box-wrapper pane"><div class="box">
-					<div class="service-text"><b>Content Management</b><br/><br/>Sure we'll make you a shit WordPress site</div>
+					<div class="service-text"><b>Content Management</b><br/><br/>Easily publish content to the web</div>
 				</div></div>
 				<div class="box-wrapper pane"><div class="box">
-					<div class="service-text"><b>Business Insights</b><br/><br/>Analysis tools to learn shit</div>
+					<div class="service-text"><b>Business Insights</b><br/><br/>Give you a deeper look into site traffic</div>
 				</div></div>
 			</div>
-			<div class="box-row new-row">	
+			<div>	
 				<div class="box-wrapper pane"><div class="box">
-					<div class="service-text"><b>Code Auditing</b><br/><br/>Fix your shit code</div>
+					<div class="service-text"><b>Code Auditing</b><br/><br/>Refactor and review for best practices</div>
 				</div></div>
 				<div class="box-wrapper pane"><div class="box">
-					<div class="service-text"><b>Social Media</b><br/><br/>You're old, let us Facebook for you!</div>
+					<div class="service-text"><b>Social Media</b><br/><br/>Manage outlets easily to reach your audience</div>
 				</div></div>
 				<div class="box-wrapper pane"><div class="box">
-					<div class="service-text"><b>Design</b><br/><br/>Just because you made it in Photoshop doesn't mean it's feasible on the web</div>
+					<div class="service-text"><b>Design</b><br/><br/>Based on UX best practices</div>
 				</div></div>
 			</div>
 		</div>
@@ -104,20 +106,23 @@
 			<div>
 				<p>These are some of the technologies we use to craft custom applications. Using cutting-edge technologies allows future developers to understand the code and start developing more quickly.</p>
 			</div>	
-			<div class="carousel-container">
-				<div id="carousel">
-					<div><span class="helper"></span><img src="images/mysql.png" width="100" /></div>
-					<div><span class="helper"></span><img src="images/pgsql.png" width="75" /></div>
-					<div><span class="helper"></span><img src="images/mongodb.png" width="50" /></div>
-					<div><span class="helper"></span><img src="images/php.png" width="150" /></div>
-					<div><span class="helper"></span><img src="images/python.png" width="100" /></div>
-					<div><span class="helper"></span><img src="images/nodejs.png" width="100" /></div>
-					<div><span class="helper"></span><img src="images/sass.png" width="125" /></div>
-					<div><span class="helper"></span><img src="images/angularjs.png" width="100" /></div>
-					<div><span class="helper"></span><img src="images/vuejs.png" width="100" /></div>
-				</div>
+
+			<div style="width: 100%;">
+				<table class="table skills-table" style="width: 500px; margin: 0 auto;">
+					<tr>
+						<td style="border-top: 0px; vertical-align: middle;"><img src="images/mysql.png" width="100" /></td>
+						<td style="border-top: 0px; vertical-align: middle;"><img src="images/pgsql.png" width="75" /></td>
+						<td style="border-top: 0px; vertical-align: middle;"><img src="images/mongodb.png" width="50" /></td>
+						<td style="border-top: 0px; vertical-align: middle;"><img style="position: relative; left: -16px;" src="images/php.png" width="150" /></td>						
+					</tr>
+					<tr>
+						<td style="border-top: 0px; vertical-align: middle;"><img src="images/python.png" width="100" /></td>
+						<td style="border-top: 0px; vertical-align: middle;"><img src="images/nodejs.png" width="100" /></td>
+						<td style="border-top: 0px; vertical-align: middle;"><img src="images/wp.png" width="100" /></td>
+						<td style="border-top: 0px; vertical-align: middle;"><img src="images/vuejs.png" width="100" /></td>						
+					</tr>
+				</table>
 			</div>
-			<p style="margin-top:2em; text-align: center;"><i>If you're on mobile you're missing out on this really cool animation</i></p>
 		</div>
 	</div>
 	<div id="slide4" style="height:450px; width: 100%; background-color: #fff; color: black; padding-top: 1em;">
@@ -125,12 +130,12 @@
 		<div class="container">
 			<p style="font-size: 2.5em; text-align: left; color: white;"><b>Portfolio</b></p>
 			<div style="width:100%; text-align: center;" id="repo-table">
-				<div class="new-row">
+				<div>
 					<div id="repo-1" class="pane repo-pane"></div>
 					<div id="repo-2" class="pane repo-pane"></div>
 					<div id="repo-3" class="pane repo-pane"></div>
 				</div>
-				<div class="new-row">
+				<div>
 					<div id="repo-4" class="pane repo-pane"></div>
 					<div id="repo-5" class="pane repo-pane"></div>
 					<div id="repo-6" class="pane repo-pane"></div>
