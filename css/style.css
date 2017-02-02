@@ -210,7 +210,7 @@ a,a:hover,a:active,a:visited {
 .skills-table td {
 	display: inline-block; 
 	text-align: center; 
-	width: 25%;	
+	width: 24%;	
 }
 
 #slide4 {
@@ -222,8 +222,6 @@ a,a:hover,a:active,a:visited {
 .repo-pane {
 	background-color: #eee;
 	padding: 1em;
-	text-overflow: ellipsis;
-    overflow: hidden;
 }
 
 .repo-pane a, .repo-pane a:hover, .repo-pane a:active, .repo-pane a:visited {
@@ -254,5 +252,14 @@ a,a:hover,a:active,a:visited {
 }
 
 #slide5 a:hover {
+	color: gold;
+}
+
+a.link {
+	color: rgb(199,0,57);
+	font-weight: 700;
+}
+
+a.link:hover {
 	color: gold;
 }

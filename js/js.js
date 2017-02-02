@@ -57,8 +57,6 @@ $(function() {
 		// e.preventDefault();
 		var id = e.target.id;
 
-		console.log('id = ' + id)
-
 		if(!$(e.target).hasClass('selected')) {
 			removeSelectedClass();
 
@@ -116,22 +114,18 @@ $(function() {
 
 		repos = shuffle(repos);
 
-		// repos = repos.slice(0,nRepos);
-
 		repos.sort(function(a,b) {
 			return b.id - a.id;
 		});
 
-		console.log(repos)
-
-		i = 0
+		var i = 0;
 		while(i < nRepos) {
 			var repo = repos[i];
 
 			if(repo.name && repo.description) {
 				//var html = '<a href="' + repo.url + '" target="_blank">';
 				var	html = '<p><b>' + repo.name + '</b></p>';
-					html += '<p>' + repo.description + '</p>';
+					html += '<p style="height: 65%;	text-overflow: ellipsis;overflow: hidden;">' + repo.description + '</p>';
 					//html += '</a>';
 
 				$('#repo-' + (i+1)).html(html);
