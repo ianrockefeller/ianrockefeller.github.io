@@ -124,7 +124,7 @@ $(function() {
 
 			if(repo.name && repo.description) {
 				//var html = '<a href="' + repo.url + '" target="_blank">';
-				var	html = '<p><b>' + repo.name + '</b></p>';
+				var	html = '<p style="word-wrap: break-word;"><b>' + repo.name + '</b></p>';
 					html += '<p style="height: 65%;	text-overflow: ellipsis;overflow: hidden;">' + repo.description + '</p>';
 					//html += '</a>';
 
