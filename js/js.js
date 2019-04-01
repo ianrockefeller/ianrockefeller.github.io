@@ -57,6 +57,11 @@ $(function() {
 		// e.preventDefault();
 		var id = e.target.id;
 
+    if(id === 'blog') {
+      window.location.href = 'https://blog.ianrockefeller.com';
+      return;
+    }
+
 		if(!$(e.target).hasClass('selected')) {
 			removeSelectedClass();
 
