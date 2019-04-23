@@ -90,14 +90,9 @@ a:hover {
   background-image: url('../images/bg1.jpg');
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-size: cover;
   background-color: #999;
- image-rendering: crisp-edges;
- image-rendering: -moz-crisp-edges;          /* Firefox */
- image-rendering: -o-crisp-edges;            /* Opera */
- image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
- -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
 }
 
 .portfolio {
