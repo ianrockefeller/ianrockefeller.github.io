@@ -13,8 +13,14 @@ p, .title, .subtitle {
 } 
 
 .column {
-  background-color: #e8e8f3;
-  padding: 3em 2em;
+  /* background-color: #e8e8f3; */
+  display: flex;
+  /* padding: 3em 2em; */
+}
+
+.column > div {
+  background-color: #eee;
+  padding: 1em;
 }
 
 .column:last-child {
@@ -27,22 +33,6 @@ p, .title, .subtitle {
 
 .section, .footer {
   min-height: 100vh;
-}
-
-.placeholder-3 {
-  color: #8481A3;
-  color: #CE9565;
-  color: #A88976;
-  color: #795547;
-  color: #312D3C;
-}
-
-.placeholder-4 {
-  color: #07050A;
-  color: #D99D68;
-  color: #474F75;
-  color: #312D3C;
-  color: #795547;
 }
 
 .services > .container > .title {
