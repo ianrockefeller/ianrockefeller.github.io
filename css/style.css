@@ -132,3 +132,13 @@ a:hover {
     background-color: #312d3c;
   }
 }
+
+.repos > .column > div:hover {
+  /* background-color: rgb(243, 201, 85) !important; */
+  background-color: #8481A3 !important;
+}
+
+.repos > .column > div:hover p {
+  color: rgb(243, 201, 85) !important;
+  /* background-color: #8481A3 !important; */
+}
