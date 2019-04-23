@@ -21,6 +21,7 @@ p, .title, .subtitle {
 .column > div {
   background-color: #eee;
   padding: 1em;
+  width: 100%;
 }
 
 .column:last-child {
