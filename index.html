@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="IanRockefeller.com | Ian Rockefeller - Digital and Tech Innovator">
     <meta name="description" content="Welcome to my ultra-fast, hyper-responsive, crazily-accessible, value-driven, subjectively-awesome website. Sometimes the information is all we really need.">
     <meta name="keywords" content="digital consulting, internet consulting, web solutions, digital marketing, e-commerce solutions, CRM solutions, online business strategies">
@@ -15,45 +17,73 @@
      *       GET OUT ME SWAMP
      */
     </script>
+    
+    <style>
+      /* Skip link for keyboard navigation */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 6px;
+        background: #000;
+        color: #fff;
+        padding: 8px;
+        text-decoration: none;
+        border-radius: 3px;
+        z-index: 100;
+      }
+      .skip-link:focus {
+        top: 6px;
+      }
+      
+      /* Focus styles for better keyboard navigation */
+      a:focus, button:focus {
+        outline: 2px solid #0066cc;
+        outline-offset: 2px;
+      }
+      
+      /* Ensure sufficient color contrast */
+      body {
+        color: #333;
+        background-color: #fff;
+      }
+      
+      a {
+        color: #0066cc;
+      }
+      
+      a:visited {
+        color: #551a8b;
+      }
+    </style>
   </head>
   <body>
-    <main style="margin: 3em;">
-      <p style="font-size: 3em;">✌</p>
+    <!-- Skip link for keyboard accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <main id="main-content" style="margin: 3em;">
+      <div style="font-size: 3em;" role="img" aria-label="Peace sign emoji">✌</div>
       <h1>Ian Rockefeller - Digital and Tech Innovator</h1>
-      <h2><i>Founder of <a href="https://www.droidspeaklabs.com">Droid Speak Labs</a> where we help businesses launch and scale their online presence.</i></h2>
+      <h2><em>Founder of <a href="https://droidspeaklabs.com" aria-label="Visit Droid Speak Labs website">Droid Speak Labs</a> where we help businesses launch and scale their online presence.</em></h2>
       <p>
         Welcome to my ultra-fast, hyper-responsive, crazily-accessible, value-driven, subjectively-awesome website.
         <br>This website is designed to be an extreme example that shows the internet does not need to be bloated and overcomplicated. 
-        <br>Sometimes sexy <i>is</i> simple and the information is all we really need.
+        <br>Sometimes sexy <em>is</em> simple and the information is all we really need.
       </p>
       <p>I will mainly be rambling on about the future of tech and the internet.</p>
-      <h3>My Projects:</h3>
-      <ul>
-        <li><a href="https://trippr.xyz">Trippr -- AI-powered travel planner and agent</a></li>
-        <li><a href="https://www.spool.lol">Spool</a> -- Forum discovery for authoritative content on specific topics</li>
+      
+      <section aria-labelledby="projects-heading">
+        <h3 id="projects-heading">My Projects:</h3>
         <ul>
-          <li><a href="https://www.reddit.com/r/spool">Join our Spool Reddit community!</a></li>
+          <li><a href="https://vowelmoney.com" aria-label="Visit VOWEL - Peer to peer loans for variable lending">VOWEL</a> -- Peer to peer loans for variable lending</li>
+          <li><a href="https://droidspeaklabs.com" aria-label="Visit Droid Speak Labs - Digital agency for all things software">Droid Speak Labs</a> -- Digital agency for all things software</li>
+          <li><a href="https://closedai.biz" aria-label="Visit Closed AI - Open source Artificial Intelligence for the people">Closed AI</a> -- Open source Artificial Intelligence for the people</li>
+          <li><a href="https://trippr.ai" aria-label="Visit Trippr - AI-powered travel planner and agent (currently in closed beta)">Trippr</a> <em>(Closed beta)</em> -- AI-powered travel planner and agent</li> 
+          <li><a href="https://mtgpancake.com" aria-label="Visit MTG Pancake - The best Magic: the Gathering app for real cardboard to table gaming (coming soon)">MTG Pancake</a> <em>(Coming soon!)</em> -- The best Magic: the Gathering app for real cardboard to table gaming</li>
         </ul>
-        <li><a href="https://www.saasforthat.xyz">SaaS For That</a> -- App discovery for business owners and entrepreneurs</li>
-        <ul>
-          <li><a href="https://www.reddit.com/r/saasforthat">Join our SaaS For That Reddit community!</a></li>
-        </ul>        
-        <li><a href="https://www.vowelmoney.com">VOWEL</a> -- Peer to peer loans for variable lending</li>
-        <li><a href="https://www.droidspeaklabs.com">Droid Speak Labs</a> -- Digital agency for all things software</li>
-      </ul>
-      <h3>Helpful Links:</h3>
+      </section>
+      <!-- <h3>Blog Posts:</h3>
       <ul>
-        <li><a href="https://www.droidspeaklabs.com/media/digital-success-simplified-digital-marketing-guide.pdf">FREE PDF Guide to Digital Marketing</a></li>
-      </ul>
-      <h3>Blog Posts:</h3>
-      <ul>
-        <li><a href="https://www.ianrockefeller.com/blog/brief-description-digital-marketing-terms.html">A Brief Description of Digital Marketing Strategies</a></li>
-        <li><a href="https://www.ianrockefeller.com/blog/introduction-to-online-presence.html">An Introduction to Online Presence</a></li>
-        <li><a href="https://www.ianrockefeller.com/blog/introduction-to-websites.html">An Introduction to Business Websites</a></li>
-        <li><a href="https://www.ianrockefeller.com/blog/introduction-to-social-media.html">An Introduction to Social Media for Your Business</a></li>
-        <li><a href="https://www.ianrockefeller.com/blog/why-gen-z-doesnt-want-to-work.html">The Real Reasons Behind Gen Z's Workplace Discontent</a></li>
-        <li><a href="https://www.ianrockefeller.com/blog/what-is-a-blockchain.html">What is a Blockchain?</a></li>
-      </ul>
+      </ul> -->
     </main>
   </body>
 </html>
